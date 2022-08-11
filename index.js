@@ -24,6 +24,10 @@ const transferSol = async () => {
   // Get Keypair from Secret Key
   var from = Keypair.fromSecretKey(DEMO_FROM_SECRET_KEY);
 
+  // Making a keypair and getting the private key
+  const newPair = Keypair.generate();
+  console.log(newPair);
+
   // Other things to try:
   // 1) Form array from userSecretKey
   // const from = Keypair.fromSecretKey(Uint8Array.from(userSecretKey));
