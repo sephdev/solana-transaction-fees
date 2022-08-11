@@ -12,10 +12,10 @@ const {
 } = require('@solana/web3.js');
 
 const DEMO_FROM_SECRET_KEY = new Uint8Array([
-  160, 20, 189, 212, 129, 188, 171, 124, 20, 179, 80, 27, 166, 17, 179, 198,
-  234, 36, 113, 87, 0, 46, 186, 250, 152, 137, 244, 15, 86, 127, 77, 97, 170,
-  44, 57, 126, 115, 253, 11, 60, 90, 36, 135, 177, 185, 231, 46, 155, 62, 164,
-  128, 225, 101, 79, 69, 101, 154, 24, 58, 214, 219, 238, 149, 86,
+  49, 31, 88, 101, 252, 44, 172, 228, 220, 45, 8, 242, 89, 234, 52, 133, 247,
+  185, 123, 230, 47, 72, 218, 73, 200, 60, 67, 232, 95, 225, 90, 214, 76, 79,
+  114, 189, 99, 248, 116, 13, 127, 155, 228, 151, 10, 47, 134, 230, 156, 122,
+  123, 46, 43, 62, 131, 230, 104, 194, 204, 67, 127, 5, 31, 117,
 ]);
 
 const transferSol = async () => {
@@ -25,8 +25,8 @@ const transferSol = async () => {
   var from = Keypair.fromSecretKey(DEMO_FROM_SECRET_KEY);
 
   // Making a keypair and getting the private key
-  const newPair = Keypair.generate();
-  console.log(newPair);
+  // const newPair = Keypair.generate();
+  // console.log(newPair);
 
   // Other things to try:
   // 1) Form array from userSecretKey
