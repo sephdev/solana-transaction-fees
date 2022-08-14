@@ -44,8 +44,8 @@ const getFromWalletBalance = async () => {
 const to = Keypair.generate();
 
 // Extract the public and private key from the (to) keypair
-const toPublicKey = new PublicKey(to._keypair.publicKey).toString();
-const toPrivateKey = to._keypair.secretKey;
+const toPublicKey = new PublicKey(to.publicKey).toString();
+const toPrivateKey = to.secretKey;
 
 // Check to see new generated Keypair
 // const connection = new Connection(clusterApiUrl('devnet'), 'confirmed');
